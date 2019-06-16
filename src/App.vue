@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import Todos from './components/Todos'
 
 
 export default {
@@ -14,13 +15,31 @@ export default {
   },
   data () {
     return {
-      todos
-    }
-  }
+      todos: [
+     {
+       id: 1,
+       titile: "Todo One",
+       completed: false
+     },
+     {
+       id: 2,
+       titile: "Todo Two",
+       completed: true
+     },
+     {
+       id: 3,
+       titile: "Todo Three",
+       completed: false
+     }
+      ]
 
+    }
+    
+  }
 
 }
 </script>
+
 
 <style>
   * {
